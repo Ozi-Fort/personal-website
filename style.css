@@ -62,6 +62,57 @@ span { color: #b74b4b; }
   box-shadow: 0 0 25px #b74b4b;
 }
 
+.typing-text{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.typing-text span{
+  position: relative;
+}
+
+.typing-text span::before{
+  content: "Programmer";
+  color: #b74b4b;
+  animation: words 20s infinite;
+}
+
+.typing-text span::after{
+  content: "";
+  background-color: #330d21;
+  position: absolute;
+  width:calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid #330d21;
+  right: -8;
+  animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+  to{
+    border-left: 3px solid #b74b4b;
+  }
+}
+
+@keyframes words {
+  0%,20%{
+    content: "Programmer";
+  }
+  21%,40%{
+    content: "Data Analyst";
+  }
+  41%,60%{
+    content: "Robotics Enthusiast";
+  }
+  61%,80%{
+    content: "Java Specialist";
+  }
+  81%,100%{
+    content: "Python Programmer";
+  }
+}
+
 /* Responsive */
 @media (max-width: 995px) {
   .home { flex-direction: column; gap: 4rem; padding-top: 2rem; }
