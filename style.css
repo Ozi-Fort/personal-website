@@ -45,11 +45,7 @@ span { color: #b74b4b; }
 
 /* Image */
 .home-img img {
-<<<<<<< HEAD
   width: 24vw; height: 24vw; border-radius: 120%;
-=======
-  width: 24vw; border-radius: 120%;
->>>>>>> 5360fe29444c53285ec38b07fa8b34bbf1ccda53
   box-shadow: 0 0 25px #b74b4b; transition: .2s linear;
 }
 .home-img img:hover { transform: scale(1.03); }
