@@ -7,7 +7,7 @@ html { font-size: 62.5%; }
 body {
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  background: #000;
+  background: #330d21;
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
@@ -45,7 +45,11 @@ span { color: #b74b4b; }
 
 /* Image */
 .home-img img {
+<<<<<<< HEAD
   width: 24vw; height: 24vw; border-radius: 120%;
+=======
+  width: 24vw; border-radius: 120%;
+>>>>>>> 5360fe29444c53285ec38b07fa8b34bbf1ccda53
   box-shadow: 0 0 25px #b74b4b; transition: .2s linear;
 }
 .home-img img:hover { transform: scale(1.03); }
@@ -60,6 +64,57 @@ span { color: #b74b4b; }
 .social-icons a:hover {
   background: #b74b4b; color: #000; transform: scale(1.15) translateY(-4px);
   box-shadow: 0 0 25px #b74b4b;
+}
+
+.typing-text{
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+}
+
+.typing-text span{
+  position: relative;
+}
+
+.typing-text span::before{
+  content: "Programmer";
+  color: #b74b4b;
+  animation: words 20s infinite;
+}
+
+.typing-text span::after{
+  content: "";
+  background-color: #330d21;
+  position: absolute;
+  width:calc(100% + 8px);
+  height: 100%;
+  border-left: 3px solid #330d21;
+  right: -8;
+  animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+  to{
+    border-left: 3px solid #b74b4b;
+  }
+}
+
+@keyframes words {
+  0%,20%{
+    content: "Programmer";
+  }
+  21%,40%{
+    content: "Data Analyst";
+  }
+  41%,60%{
+    content: "Robotics Enthusiast";
+  }
+  61%,80%{
+    content: "Java Specialist";
+  }
+  81%,100%{
+    content: "Python Programmer";
+  }
 }
 
 /* Responsive */
