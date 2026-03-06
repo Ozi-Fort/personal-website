@@ -45,7 +45,7 @@ span { color: #b74b4b; }
 
 /* Image */
 .home-img img {
-  width: 24vw; height: 24vw; border-radius: 120%;
+  width: 24vw; border-radius: 120%;
   box-shadow: 0 0 25px #b74b4b; transition: .2s linear;
 }
 .home-img img:hover { transform: scale(1.03); }
@@ -120,3 +120,7 @@ span { color: #b74b4b; }
   .home .home-content h3 { font-size: 2.5rem; }
   .home-img img { width: 70vw; margin-top: 2rem; }
 }
+
+
+/* -------------------- ABOUT ME CSS SECTION -----------------------*/
+.about .about-content h1{font-size: large;}
