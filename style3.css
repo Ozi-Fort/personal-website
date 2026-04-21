@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { font-size: 62.5%; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: #330d21;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding-top: 80px; /* for fixed header */
+}
+
+/* Header & Nav */
+header {
+  position: fixed; top: 0; left: 0; width: 100%;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 9%; z-index: 100; background: transparent;
+}
+
+.logo { font-size: 3rem; color: #b74b4b; font-weight: 800; transition: .3s; }
+.logo:hover { transform: scale(1.05); }
+
+nav a {
+  font-size: 1.8rem; color: #fff; margin-left: 4rem;
+  border-bottom: 3px solid transparent; transition: .3s;
+}
+nav a:hover { color: #b74b4b; border-bottom-color: #b74b4b; }
+
+/* Section & Hero */
+section { min-height: 100vh; padding: 5rem 9%; }
+
+.home {
+  display: flex; justify-content: center; align-items: center; gap: 8rem;
+}
+
+.home .home-content h1 { font-size: 6rem; line-height: 1.2; }
+.home .home-content h3 { font-size: 4rem; margin-bottom: 1rem; }
+.home .home-content p { font-size: 1.6rem; }
+
+span { color: #b74b4b; }
