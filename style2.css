@@ -44,4 +44,47 @@ section { min-height: 100vh; padding: 5rem 9%; }
 span { color: #b74b4b; }
 
 /* -------------------- ABOUT ME CSS SECTION -----------------------*/
-.about .about-content h1{font-size: large;}
+/* Section layout */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 700px;
+}
+
+/* Paragraph styling */
+.about-container p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Highlighted words */
+.highlight {
+  color: #ff7a7a;
+  font-weight: 600;
+}
+
+/* Image*/
+.about-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 25px #b74b4b;
+}
+
+
+@media (max-width: 995px) {
+  .about-container { flex-direction: column; gap: 2rem; padding-top: 6rem; padding-right: 5rem; }
+  .about-container p { font-size: 1.6rem; }
+  .about-img {width: 80px; height: 80px; margin-top: 2rem;}
+}
